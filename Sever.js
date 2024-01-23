@@ -6,7 +6,7 @@ require('dotenv').config()
 const nodemailler = require('nodemailer')
 
 
-app.use(express.urlencoded({extended:true}))
+app.use(express.urlencoded({extended:false}))
 
 const transporter = nodemailler.createTransport({
     host: process.env.SMTP_HOST,
